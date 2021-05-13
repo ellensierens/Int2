@@ -1,0 +1,867 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  line-height: 1.4;
+  background: url(../assets/img/pattern7.jpg);
+  width: 96rem;
+  margin: 0 auto;
+  color: #303030;
+  height: 100%;
+}
+
+.hidden{
+  display: none;
+}
+
+.nav{
+  margin-bottom: 2rem;
+  margin-top: 7.4rem;
+}
+
+.nav__list {
+  display: flex;
+  width: 96rem;
+  justify-content: space-between;
+}
+
+.nav__list--part{
+  display: flex;
+}
+
+.nav__item{
+  margin-right: 6.8rem;
+}
+
+.nav__link{
+  color: #303030;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav__link:hover{
+  color: #7660DC;
+}
+
+.nav__link--active{
+  color: #7660DC;
+}
+
+.nav__item--rechts{
+  margin: 0;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7rem;
+  padding-top: 2.5rem;
+  border-top: 0.2rem solid #303030 ;
+
+}
+
+.footer__socials{
+  display: flex;
+}
+
+.socials__link{
+  margin-left: 3.1rem;
+  color: #303030;
+}
+
+.title{
+  font-family: "titling-gothic-fb-wide", Helvetica, sans-serif, Arial;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 15.5rem;
+  color: #7660DC;
+  line-height: 0.8;
+  margin-top: 12.6rem;
+}
+
+.title--smal{
+  font-size: 12rem;
+}
+
+.subtitle{
+  font-family: "titling-gothic-fb-wide", Helvetica, sans-serif, Arial;
+  font-weight: 700;
+  font-size: 3.5rem;
+  width: 50rem;
+  margin-top: 5rem;
+  line-height: 1;
+}
+
+.home__container{
+  display: flex;
+}
+
+.home__collage{
+  margin-left: -4rem;
+}
+
+.home__collage--gif{
+  position: absolute;
+  opacity: 0;
+}
+
+.home__img{
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  background:  url(../assets/img/urbanKnikkeren.png);
+  background-size: 48.7rem 95rem;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-position: right top ;
+  padding-right: 15rem;
+  padding-top: 10rem;
+  margin-top: -10rem;
+}
+
+.home__knikker{
+  margin-right: 5.5rem;
+}
+
+.inleiding__title{
+  color: #7660DC;
+  margin-bottom: 1rem;
+}
+
+.inleiding{
+  margin-top: -30rem;
+  width: 45rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.spelen__inleiding{
+  font-weight: bold;
+  margin-top: 4rem;
+}
+
+.inleiding__tekst{
+  margin-top: 2rem;
+} 
+
+.spelen__inleiding{
+  width: 46rem;
+  margin-bottom: 10rem;
+}
+
+.betalen__button, .button--betalen , .cart__button, .inleiding__button, .inschrijven__button, .niveau__button, .succes__button{
+  align-self: flex-end;
+  color: #7660DC;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  margin-top: 2rem;
+}
+
+.inschrijven__button{
+  align-self: flex-end;
+
+}
+
+.succes__button:hover >img, .inschrijven__button:hover >img, .inleiding__button:hover >img, .betalen__button:hover >img, .cart__button:hover >img, .niveau__button:hover >img, .meer__evenement:hover .meer__pijl, .evenementen__evenement:hover .evenement__pijl{
+  transform: translate(1rem);
+  transition: 0.2s ease-out;
+}
+
+.button__pijl{
+  margin-top: 2rem;
+  margin-left: -4.5rem;
+}
+
+.button__pijl--niveau{
+  margin-top: 5rem;
+}
+
+.button__pijl--betalen{
+  margin-top: 4rem;
+}
+
+.inleiding:before{
+  content: "";
+  background-image: url(../assets/img/watIsDat.png);
+  background-size: 38rem 54.5rem;
+  width: 38rem;
+  height: 54.5rem;
+  position: absolute;
+  margin-left: -37rem;
+  margin-top: -4.5rem;
+}
+
+.cart__title, .succes__title , .niveau__title, .evenementen__title, .agenda__title, .detail__title, .spelen__title{
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  font-size: 7.5rem;
+  line-height: 1;
+  font-family: "titling-gothic-fb-wide", Helvetica, sans-serif, Arial;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #7660DC;
+}
+
+.niveau__title{
+  margin: 15rem 0 7.5rem 0;
+}
+
+.detail__title, .spelen__title{
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+}
+
+.detail__title{
+  width: 90rem;
+}
+
+.agenda__title{
+  font-size: 10rem;
+}
+
+.evenement__title{
+  width: 47rem;
+}
+
+.evenementen__titles, .agenda__titles{
+  display: flex;
+}
+
+.agenda__titles{
+  margin-top: 8rem;
+}
+
+.evenement__subtitle{
+  margin-top: 10rem;
+  margin-left: -18rem;
+}
+
+.agenda__subtitle{
+  margin-left: -31rem;
+  margin-top: 4.5rem;
+  mix-blend-mode: multiply;
+}
+
+.evenementen{
+  margin-top: 19.6rem;
+  margin-bottom: 10rem;
+}
+
+.evenement__container--tekst{
+  display: flex;
+}
+
+.evenement__container--img{
+  align-self: flex-end;
+  margin-top: -15rem;
+}
+
+.evenement__pijl--hoofd{
+  margin-left: -5rem;
+}
+
+.evenement__img--home{
+  margin-right: -5rem;
+}
+
+.evenement__datum, .evenement__geen{
+  font-weight: bold;
+}
+
+.subtitle__evenement{
+  font-family: "titling-gothic-fb-wide", Helvetica, sans-serif, Arial;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+  margin-top: 1rem;
+  color: #303030;
+
+}
+
+.evenement__link{
+  text-decoration: none;
+  color: #303030;
+}
+
+.subtitle__evenement--hoofd{
+  font-size: 4rem;
+}
+
+.evenementen__evenement--hoofd{
+  width: 40rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.evenement__oneliner{
+  margin-top: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.evenement__parameters, .niveau__subtitle{
+  font-size: 1.6rem;
+  color: #7660DC;
+  font-weight: bold;
+  margin-top: 0.6rem;
+}
+
+.niveau__subtitle{
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.evenementen__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.evenementen__klein{
+  align-self: flex-end;
+}
+
+.evenementen__evenement--klein{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 5rem;
+  width: 40rem;
+}
+
+.agenda__evenement{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 62rem;
+  margin: 7rem 0;
+}
+
+.evenement__inhoud{
+  width: 30rem;
+}
+
+
+.agenda__evenement--hoofd{
+  display: flex;
+  align-items: center;
+  margin: 5rem 0;
+  width: 62rem;
+}
+
+
+.evenement__img--hoofd{
+  transform: rotate(-90DEG);
+  margin-left: 8rem;
+  display: block;
+  width: 20.7rem;
+  height: 27rem;
+}
+
+.filter__part{
+  display: flex;
+}
+
+.filter__radio + span{
+  padding: 1.1rem;
+  border: 0.2rem solid #303030;
+  margin: 1rem -0.2rem 2rem 0rem;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.filter__radio:hover +span{
+  background-color: #7660DC;
+  color: white;
+}
+
+.filter__radio{
+  display: none;
+
+}
+
+.filter__radio:checked + span{
+  background-color: #303030;
+  color: white;
+}
+
+.filter__title{
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #7660DC;
+}
+
+.agenda__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter__form{
+  margin-top: 6rem;
+  position: sticky;
+  z-index: 7;
+  top: 10rem;
+}
+
+.filter__buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter__button {
+  font-size: 1.5rem;
+  margin-top: 2.2rem;
+}
+
+.filter__button--filter{
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: underline #303030
+}
+
+.detail__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail__img{
+  margin-left: -27rem;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+}
+
+.img__oneliner{
+  margin-top: -6rem;
+  mix-blend-mode: multiply;
+  margin-right: -6rem;
+}
+
+.detail__tekst{
+  width: 40rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.detail__tekst > div{
+  margin-top: 3rem
+}
+
+.meer{
+  display: flex;
+  justify-content: space-between;
+  margin: 7rem 0
+}
+
+.meer__title{
+  transform: rotate(-90deg);
+  text-transform: uppercase;
+  font-family: "titling-gothic-fb-wide", Helvetica, sans-serif, Arial;
+  font-weight: bold;
+  font-size: 4rem;
+  margin-left: 3rem;
+  margin-right: -20rem;
+}
+
+.evenement__title--meer{
+  font-family: "titling-gothic-fb-wide", Helvetica, sans-serif, Arial;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.meer__wrapper{
+  display: flex;
+  width: 21rem;
+}
+
+.uitleg__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.uitleg__part{
+  width: 30rem;
+}
+
+.uitleg__part > p{
+  width: 27rem;
+}
+
+.uitleg__part > h3, .part__wrapper >h3{
+  font-family: "titling-gothic-fb-wide", Helvetica, sans-serif, Arial;
+  font-weight: bold;
+  font-size: 2.9rem;
+  margin-bottom: 3.5rem
+}
+
+.part__wrapper >h3{
+  font-size: 3.3rem;
+  margin-bottom: -3rem;
+}
+
+.uitleg__img{
+  margin-top: -33rem;
+}
+
+.uitleg__part--target >p{
+  width: 46rem;
+  margin-top: 2.4rem;
+}
+
+.target__part > h4{
+  font-weight: bold;
+  margin: 2.4rem 0 1.5rem 0
+}
+
+.target__part>p{
+  width: 30rem;
+}
+
+.target{
+  display: flex;
+  justify-content: space-between;
+  width: 96rem;
+}
+
+.niveau__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.part__wrapper{
+  display: flex;
+  flex-flow: column;
+}
+
+.niveau__level{
+  align-self: flex-end;
+}
+
+.cart__wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 9.5rem 0 0 0;
+}
+
+.cart__progress{
+  display: flex;
+  justify-content: space-between;
+  width: 30rem;
+}
+
+.cart__subtitle{
+  font-weight: bold;
+  font-size: 3rem;
+  margin-top: 2.2rem;
+}
+
+.progress__part{
+  height: 8rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress__part>p{
+  font-size: 1.6rem;
+}
+
+.progress__notactive{
+  margin: 1rem 0 1rem;
+}
+
+.inschrijvingen__labels{
+  display: flex;
+  font-weight: bold;
+  font-size: 1.8rem;
+  border-bottom: #303030 0.3rem solid;
+  padding: 1.5rem;
+  align-items: flex-end;
+  margin-bottom: 2.2rem;
+}
+
+.labels__label--activiteit{
+  margin: 0 27rem 0 19rem;
+}
+
+.labels__label--prijs{
+  margin-left: 16rem;
+}
+
+.cart__item{
+  border-bottom: #303030 0.3rem solid;
+  padding-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+
+.cart__item--link, .cart__item{
+  display: flex;
+  align-items: center;
+}
+
+.item__info{
+  margin-left: 1.5rem;
+  width: 26.4rem;
+}
+
+.item__aantal{
+  width: 5rem;
+  height: 4rem;
+  font-size: 1.8rem;
+  margin-right: 20rem;
+  margin-left: 9rem;
+  text-align: center;
+}
+
+.item__price{
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-right: 6rem;
+}
+
+.item__button, .inschrijven__button{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.button__pijl--niveau{
+  margin-top: 4.5rem;
+}
+
+
+.cart__info{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  align-items: flex-end;
+  margin-bottom: 5.5rem;
+}
+
+.cart__info>p{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.cart__info button{
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.cart__link{
+  color: #7660DC;
+  font-size: 2rem;
+}
+
+
+.totaal{
+  margin: 0 4.5rem 0 4rem ;
+}
+
+.button__wrapper{
+  display: flex;
+ justify-content: flex-end;
+ margin-bottom: 8.5rem;
+}
+
+.niveau__part{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 50rem;
+  width: 27.6rem;
+  margin-bottom: 10rem;
+
+}
+
+.betaling__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.betaling__wrapper>form{
+  display: flex;
+  flex-flow: column;
+}
+
+.form__label{
+  font-size: 2rem;
+  line-height: 1;
+  font-family: "titling-gothic-fb-wide", Helvetica, sans-serif, Arial;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #7660DC;
+  display: flex;
+  flex-flow: column;
+  margin-top: 6.5rem;
+}
+
+.form__label>input{
+  width: 48rem;
+  height: 4rem;
+  margin-top: 1.6rem;
+  font-size: 2rem;
+}
+
+.betalen__button{
+  font-size: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 7.5rem;
+}
+
+.betaling__herhaling{
+  width: 35rem;
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 5rem;
+  margin-top: 6.5rem;
+}
+
+.herhaling__title{
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.herhaling__item{
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 2rem; */
+  margin-bottom: 3rem;
+}
+
+.herhaling__totaal{
+  border-top: #303030 solid 0.2rem;
+  padding-top: 1.5rem;
+  text-align: end;
+  font-weight: bold;
+}
+
+.nav__cart--home{
+  margin-right: 39rem;
+}
+
+.evenement__gif{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.evenement__gif--meer{
+  margin-left: -20rem;
+}
+
+.agenda__evenement:hover > .evenement__img, .meer__evenement:hover > .evenement__img{
+  opacity: 0;
+}
+
+.agenda__evenement:hover > .evenement__gif, .meer__evenement:hover > .evenement__gif{
+  opacity: 1;
+}
+
+.agenda__evenement:hover .subtitle__evenement, .meer__evenement:hover .evenement__title--meer, .evenementen__evenement:hover .subtitle__evenement{
+  color: #7660DC;
+}
+
+.filter{
+  margin-bottom: 7rem;
+}
+
+button, .button{
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.button--betalen{
+  margin-bottom: 5rem;
+  font-size: 2rem;
+}
+
+.herhaling__title--activiteit{
+  width: 15rem;
+}
+
+.error{
+  font-size: 1.5rem;
+  font-family: Helvetica, Arial, sans-serif;
+  text-transform: none;
+  color: red;
+  font-weight: bold;
+}
+
+.form__label--eerst{
+  margin-top: 2rem;
+}
+
+.gegevens__form{
+  margin-top: 4.5rem;
+}
+
+.succes__title{
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+}
+
+.succes__subtitle{
+  font-weight: bold;
+}
+
+.succes__tekst{
+  margin-top: 2rem;
+  width: 75rem;
+}
+
+.succes__button{
+  margin-right: 20rem;
+}
+
+.succes{
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 25rem;
+}
+
+.target__inleiding{
+  font-weight: bold;
+}
+
+.evenement__prijs{
+  color: white;
+  background-color: #303030;
+  padding: 1rem;
+  /* width: 7rem; */
+  display: inline-block;
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+
+.evenement__gif--hoofd{
+  transform: rotate(-90deg);
+  margin-left: 41.25rem;
+}
+
+.cart__img--hoofd{
+  margin-right: 5rem;
+}
+
+.has-js .filter__button--filter{
+  display: none;
+}
+
+.has-js .cart__update{
+  opacity: 0;
+}
+
+.meer__gif--hoofd{
+  margin-left: -11.8rem;
+  display: inline-block;
+}
